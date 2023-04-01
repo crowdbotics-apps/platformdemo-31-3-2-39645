@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { dogbreed2api_get_random_read } from "../../store/dogBreedAPI/dogbreed2api_response_get_Randoms.slice.js";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -6,6 +7,9 @@ import React from "react";
 import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
 const Untitled2 = () => {
+  const {
+    entities: dogbreed2api_response_get_Random
+  } = useSelector(state => state.dogbreed2api_response_get_Random);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(dogbreed2api_get_random_read());
@@ -19,7 +23,7 @@ const Untitled2 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Text style={styles.ExOgIkNZ}>Lorem ipsum…</Text><Text style={styles.QJivliwG}>Lorem ipsum…</Text></View>
+          <View style={styles.column1}><Text style={styles.ExOgIkNZ}>{dogbreed2api_response_get_Random[0].message}</Text><Text style={styles.QJivliwG}>{dogbreed2api_response_get_Random[0].status}</Text></View>
           <View style={styles.column2}></View>
           <View style={styles.column3}></View>
         
