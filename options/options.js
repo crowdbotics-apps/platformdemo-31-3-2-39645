@@ -1,7 +1,8 @@
 export const globalOptions = {
-  name: "platformdemo-31-3-2-39645",
-  url: "https://platformdemo-31-3-2-39645.botics.co",
-  api: "https://platformdemo-31-3-2-39645.botics.co/api/v1"
+  "name": "platformdemo-31-3-2-39645",
+  "url": "https://platformdemo-31-3-2-39645.botics.co",
+  "api": "https://platformdemo-31-3-2-39645.botics.co/api/v1",
+  "initialRoute": "Untitled1"
 };
 export const modulesOptions = {
   "@modules/app-menu": {
