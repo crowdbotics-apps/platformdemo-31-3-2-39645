@@ -1,8 +1,15 @@
+import { dogbreed2api_get_random_read } from "../../store/dogBreedAPI/dogbreed2api_response_get_Randoms.slice.js";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { Text } from "react-native";
 import React from "react";
 import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
 const Untitled2 = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(dogbreed2api_get_random_read());
+  }, []);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       flex: 1,
