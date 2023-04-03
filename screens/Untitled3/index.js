@@ -9,7 +9,7 @@ import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 const Untitled3 = () => {
   const {
     entities: dogbreed2api_response_get_Random
-  } = useSelector(state => state.dogbreed2api_response_get_Random);
+  } = useSelector(state => state.Dogbreed2api_response_get_Randoms);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(dogbreed2api_get_random_read());
