@@ -23,7 +23,7 @@ const Untitled3 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Text style={styles.KrlFbItk}>Dog Message: {dogbreed2api_response_get_Random[0].message}</Text></View>
+          <View style={styles.column1}><Text style={styles.KrlFbItk}>Dog Message: {dogbreed2api_response_get_Random[0]?.message}</Text></View>
           
           
         
