@@ -23,7 +23,7 @@ const Untitled3 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Text style={styles.KrlFbItk}>Dog Message: {dogbreed2api_response_get_Random[0]?.message}</Text></View>
+          <View style={styles.column1}><Text style={styles.KrlFbItk}>Dog Message: {dogbreed2api_response_get_Random[0]?.message}</Text><Text style={styles.QrLaxndK}>Dog Status: {dogbreed2api_response_get_Random[0]?.status}</Text></View>
           
           
         
@@ -46,6 +46,13 @@ const styles = StyleSheet.create({
   },
   KrlFbItk: {
     width: 333,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  QrLaxndK: {
+    width: 338,
     height: 50,
     lineHeight: 14,
     fontSize: 14,
