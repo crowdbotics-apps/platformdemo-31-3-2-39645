@@ -4,7 +4,7 @@ import { dogbreed2api_get_random_read } from "../../store/dogBreedAPI/dogbreed2a
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import React from "react";
-import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
+import { View, StyleSheet, ScrollView, SafeAreaView, Image } from "react-native";
 
 const Untitled3 = () => {
   const {
@@ -23,9 +23,16 @@ const Untitled3 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Text style={styles.KrlFbItk}>Dog Message: {dogbreed2api_response_get_Random[0]?.message}</Text><Text style={styles.QrLaxndK}>Dog Status: {dogbreed2api_response_get_Random[0]?.status}</Text></View>
+          <View style={styles.column1}>
+            <Text style={styles.KrlFbItk}>Dog Message: {dogbreed2api_response_get_Random[0]?.message}</Text>
+            <Text style={styles.QrLaxndK}>Dog Status: {dogbreed2api_response_get_Random[0]?.status}</Text>
+
+            <Text style={styles.QrLaxndK}>Dog Image:</Text>
+            <Image source={{
+          uri: dogbreed2api_response_get_Random[0]?.message
+        }} style={styles.bzEzGWOD} />
           
-          
+          </View>
         
         </ScrollView>
       </SafeAreaView>;
@@ -57,6 +64,10 @@ const styles = StyleSheet.create({
     lineHeight: 14,
     fontSize: 14,
     borderRadius: 0
+  },
+  bzEzGWOD: {
+    width: 400,
+    height: 400
   }
 });
 export default Untitled3;
