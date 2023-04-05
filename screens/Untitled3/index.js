@@ -24,7 +24,7 @@ const Untitled3 = () => {
     }}>
         
           <View style={styles.column1}>
-            <Text style={styles.KrlFbItk}>Dog Message: {dogbreed2api_response_get_Random[0]?.message}</Text>
+            <Text style={styles.KrlFbItk}>Dog Message - retry: {dogbreed2api_response_get_Random[0]?.message}</Text>
             <Text style={styles.QrLaxndK}>Dog Status: {dogbreed2api_response_get_Random[0]?.status}</Text>
 
             <Text style={styles.QrLaxndK}>Dog Image:</Text>
